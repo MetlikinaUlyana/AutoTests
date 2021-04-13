@@ -1,0 +1,13 @@
+C:\Users\alexe\source\repos\ParrotNameTests\ParrotNameTests\bin\Debug\chromedriver.exe
+C:\Users\alexe\source\repos\ParrotNameTests\ParrotNameTests\bin\Debug\ParrotNameTests.dll
+C:\Users\alexe\source\repos\ParrotNameTests\ParrotNameTests\bin\Debug\ParrotNameTests.pdb
+C:\Users\alexe\source\repos\ParrotNameTests\ParrotNameTests\bin\Debug\nunit.framework.dll
+C:\Users\alexe\source\repos\ParrotNameTests\ParrotNameTests\bin\Debug\WebDriver.dll
+C:\Users\alexe\source\repos\ParrotNameTests\ParrotNameTests\bin\Debug\WebDriver.Support.dll
+C:\Users\alexe\source\repos\ParrotNameTests\ParrotNameTests\bin\Debug\nunit.framework.xml
+C:\Users\alexe\source\repos\ParrotNameTests\ParrotNameTests\bin\Debug\WebDriver.xml
+C:\Users\alexe\source\repos\ParrotNameTests\ParrotNameTests\bin\Debug\WebDriver.Support.xml
+C:\Users\alexe\source\repos\ParrotNameTests\ParrotNameTests\obj\Debug\ParrotNameTests.csprojAssemblyReference.cache
+C:\Users\alexe\source\repos\ParrotNameTests\ParrotNameTests\obj\Debug\ParrotNameTests.csproj.CopyComplete
+C:\Users\alexe\source\repos\ParrotNameTests\ParrotNameTests\obj\Debug\ParrotNameTests.dll
+C:\Users\alexe\source\repos\ParrotNameTests\ParrotNameTests\obj\Debug\ParrotNameTests.pdb
