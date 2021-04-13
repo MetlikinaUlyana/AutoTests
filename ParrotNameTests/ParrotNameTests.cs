@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using System.Text;
 using NUnit.Framework;
 using OpenQA.Selenium;
@@ -28,6 +27,7 @@ namespace ParrotNameTests
         private readonly By emailResultLocator = By.ClassName("your-email");
         private readonly By resultTextLocator = By.ClassName("result-text");
         private readonly By errorMessageLocator = By.ClassName("form-error");
+        private readonly By anotherEmailLinkLocator = By.LinkText("указать другой e-mail");
 
         [Test]
         public void ComputerSite_CheckGirl_FillFormWithEmail_Success()
@@ -67,6 +67,21 @@ namespace ParrotNameTests
             driver.FindElement(girlRadioButtonLocator).Click();
             
             Assert.AreEqual(email, driver.FindElement(emailInputLocator).GetAttribute("value"), "После смены пола животного поле e-mail не очистилось");
+        }
+        [Test]
+        public void ComputerSite_ClickAnotherEmail_EmailInputIsEmpty()
+        {
+            //перейти на страницу
+            driver.Navigate().GoToUrl(siteUrl);
+
+            //заполнить форму и кликнуть
+            driver.FindElement(emailInputLocator).SendKeys(email);
+            driver.FindElement(buttonLocator).Click();
+            driver.FindElement(anotherEmailLinkLocator).Click();
+
+            //проверить e-mail
+            Assert.AreEqual(string.Empty, driver.FindElement(emailInputLocator).Text, "После клика по ссылке поле очистилось");
+            Assert.IsTrue(driver.FindElements(anotherEmailLinkLocator).Count == 0, "Не исчезла ссылка для ввода другого e-mail");
         }
 
         [Test]
