@@ -68,18 +68,16 @@ namespace ParrotNameTests
             
             Assert.AreEqual(email, driver.FindElement(emailInputLocator).GetAttribute("value"), "После смены пола животного поле e-mail не очистилось");
         }
+
         [Test]
         public void ComputerSite_ClickAnotherEmail_EmailInputIsEmpty()
         {
-            //перейти на страницу
             driver.Navigate().GoToUrl(siteUrl);
 
-            //заполнить форму и кликнуть
             driver.FindElement(emailInputLocator).SendKeys(email);
             driver.FindElement(buttonLocator).Click();
             driver.FindElement(anotherEmailLinkLocator).Click();
 
-            //проверить e-mail
             Assert.AreEqual(string.Empty, driver.FindElement(emailInputLocator).Text, "После клика по ссылке поле очистилось");
             Assert.IsTrue(driver.FindElements(anotherEmailLinkLocator).Count == 0, "Не исчезла ссылка для ввода другого e-mail");
         }
